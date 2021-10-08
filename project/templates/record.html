@@ -1,0 +1,42 @@
+{% extends "master.html" %}
+    {%block title%}
+    mini/record
+    {%endblock%}
+
+    {%block body%}
+    <div class="divrecord m-auto">
+      <div class="recordtitle m-auto">
+        <h1 class="text-white text-center">header of </h1>
+      </div>
+      <div class=" m-auto ">
+     <table class="table">
+    <thead>
+      <tr>
+        <th class="text-white">Roll NO</th>
+        <th class="text-white">Name</th>
+        <th class="text-white">Session</th>
+        <th class="text-white"> Program </th>
+
+      </tr> 
+    </thead>
+    <tbody class="recordtable overflow-auto">
+      {%for stud in stud%}
+      <tr>
+        <td>{{stud.id}}</td>
+        <td>{{stud.name}}</td>
+        <td>{{stud.session}}</td>
+        <td>{{stud.program}}</td>
+        <td><a href="/record/perform/{{stud.id}}}"><button type="button" class="btn btn-success">Performance</button></a></td>
+        <td><a href="/record/feedback/{{stud.id}}"><button type="button" class="btn btn-primary">Feedback</button>
+        </a></td>
+        <td><a href="/update/{{stud.id}}"><button type="button" class="btn btn-info">update</button></a>, <a href="/delete/{{stud.id}}"><button type="button" class="btn btn-info">delete</button></a></td>
+
+        
+      </tr>
+      {%endfor%}
+    </tbody>
+  </table>
+      </div>
+    </div>
+    {% endblock%}
+

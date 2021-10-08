@@ -1,0 +1,104 @@
+{% extends "master.html" %}
+    {%block title%}
+    mini/feedback
+    {%endblock%}
+
+    {%block body%}
+     <div class="divfeedback">
+        <div class="row border-bottom">
+             <h1 class="text-white">give the feedback about {{stud.name}}</h1>
+        </div>
+     <form action="/record/feedback/{{stud.id}}" method="post">
+                   
+
+      <div class="row pt-1">
+    <label class="text-white">class performance/participation with class activities ?</label>
+            <div class="col-md-4">
+                <div class="options"> <label class="option text-white">Good <input type="radio" name="perform" value="good"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">V Good<input type="radio" name="perform" value="v good"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">Normal<input type="radio" name="perform" value="normal"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">Bad<input type="radio" name="perform" value="bad"> <span class="checkmark"></span> </label> </div>
+            </div>
+        </div>
+
+      <div class="row pt-1">
+    <label class="text-white">how about cooperation with students/helping of weak students?</label>
+            <div class="col-md-4">
+                <div class="options"> <label class="option text-white">Good <input type="radio" name="cooperate" value="good"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">V Good<input type="radio" name="cooperate" value="v good"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">Normal<input type="radio" name="cooperate" value="normal"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">Bad<input type="radio" name="cooperate" value="bad"> <span class="checkmark"></span> </label> </div>
+            </div>
+        </div>
+        <div class="row pt-1">
+    <label class="text-white">behavior with students and other faculty members?</label>
+            <div class="col-md-4">
+                <div class="options"> <label class="option text-white">Good <input type="radio" name="behvior" value="good"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">V Good<input type="radio" name="behvior" value="v good"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">Normal<input type="radio" name="behvior" value="normal"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">Bad<input type="radio" name="behvior" value="bad"> <span class="checkmark"></span> </label> </div>
+            </div>
+        </div>
+         <div class="row pt-1">
+    <label class="text-white ">his/her vision and interset with his field ? </label>
+            <div class="col-md-4">
+                <div class="options"> <label class="option text-white">Good <input type="radio" name="practical" value="goo"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">V Good<input type="radio" name="practical" value="vgo"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">Normal<input type="radio" name="practical" value="nor"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option text-white">Bad<input type="radio" name="practical" value="bad"> <span class="checkmark"></span> </label> </div>
+                <div class="ml-2">
+                <button type="submit" class="btn btn-primary btn-lg btn-block text-center">Submit Feedback</button>
+            </div>
+
+            </div>
+        </div>
+        
+       </form>
+     </div> <!-- 
+<form action="/record/feedback/<stud_id>" method="post">
+  <label for="fname">perfomr:</label><br>
+  <input type="text" id="fname" name="perform" value=""><br>
+  <label for="lname">Last cooperate:</label><br>
+  <input type="text" id="lname" name="cooperate" value=""><br><br>
+  <div class="row pt-1">
+    <label class="text-white text-center">how is the class participate </label>
+            <div class="col-md-4">
+                <div class="options"> <label class="option">Weekly <input type="radio" name="behvior" value="salman"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option">Every Other Week <input type="radio" name="behvior" value="tariq"> <span class="checkmark"></span> </label> </div>
+            </div>
+            <div class="col-md-4 mt-md-0 mt-3">
+                <div class="options"> <label class="option">Twice a Month <input type="radio" name="behvior" value="naeem"> <span class="checkmark"></span> </label> </div>
+            </div>
+        </div>
+  <label for="lname">Last practical:</label><br>
+  <input type="text" id="lname" name="practical" value=""><br><br>
+  <label>{{msg}}</label>
+  <input type="submit" value="Submit">
+</form>-->
+    {% endblock%}
