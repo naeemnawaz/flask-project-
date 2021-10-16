@@ -1,0 +1,95 @@
+body{
+    background: url('image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    opacity: 1;
+
+} 
+.home{
+    position: relative;
+    max-width: 100%;
+    margin-top: 0px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 1.5);
+ 
+}
+.divrecord{
+    margin: -20px;
+    margin-left: 50px;
+    max-width: 900px;
+    height: 100px;
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 1.5);
+
+
+    
+}
+.recordtitle{
+    height: 50%;
+}
+.recordtable {
+    background-color:#CDE0EE;
+    overflow:auto;
+    height: 60%;
+
+}
+.divfeedback{
+    margin: 0px;
+    margin-left: 50px;
+    max-width: 900px;
+    height: 600px;
+    margin-top: 0px;
+    background: rgba(85, 147, 192, 0.9);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 1.5);
+
+}
+.divhome{
+    max-width: 700px;
+    height: 350px;
+    margin-top: 49px;
+    margin-left: 160px;
+    background: rgba(255, 255, 255, 0.5);
+}
+.divteam{
+    max-width: 700px;
+    height: 350px;
+    margin-bottom: 30px;
+    margin-left: 160px;
+    background: rgba(255, 255, 255, 0.5);
+
+
+
+}
+.recordtable buttonoffeedback{
+    margin-left: 40px;
+}
+
+.perform{
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    height: 500px;
+    border: 5px;
+    margin: auto;
+
+}
+.divchart1{
+    position: relative;
+   left: 0px;
+   padding-right: 0;
+   padding-left: 0;
+   border-color: rgba(0, 0, 200, 1.5);
+   
+}
+.padding {
+    padding-right: 0;
+    padding-left: 0;
+}
+.logo{
+    background-image: url('logo.jpg');
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
